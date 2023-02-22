@@ -4,7 +4,14 @@
     background-color: var(--noir);
 }
 
-body{
-    font-family: 'Teko', sans-serif;
+body, body a{
     color: var(--texte);
+}
+
+h1, h2{
+    text-shadow: var(--ombres-50) 3px 3px;
+}
+
+h1, h2, h3, a{
+    font-family: var(--police-titres);
 }
