@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--noir);
+}
+
+body{
+    font-family: 'Teko', sans-serif;
+    color: var(--texte);
+}

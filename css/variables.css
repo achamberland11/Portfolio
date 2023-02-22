@@ -1,0 +1,13 @@
+:root{
+    /* Couleurs */
+    --noir : #202124;
+    --noir-fonce : #262626;
+    --noir3 : #333;
+    --bleu : #292f33;
+    --ombres : #c7d0d8;
+    --texte : #f0f8ff;
+
+    /* Polices */
+    --titres : 'Teko', sans-serif;
+    --texte : 'Martel Sans', sans-serif;
+}
