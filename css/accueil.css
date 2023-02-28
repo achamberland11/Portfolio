@@ -75,7 +75,9 @@
 
 
 #titre-accueil span{
+    display: inline-block;
     background-color: transparent;
+    animation: 1.5s ease-out 0s 1 titre-onload;
 }
 
 
@@ -156,4 +158,24 @@
     padding: 1rem;
     display: flex;
     justify-content: left;
+}
+
+
+
+/******************************************* Animations keyframe
+/***************************** Titre (Antoine Chamberland) */
+
+@keyframes titre-onload {
+    0% {
+        opacity: 0%;
+        scale: 0;
+    }
+    50% {
+        opacity: 50%;
+        scale: 1.5;
+    }
+    100% {
+        opacity: 100%;
+        scale: 1;
+    }
 }
