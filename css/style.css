@@ -15,3 +15,10 @@ h1, h2{
 h1, h2, h3, a{
     font-family: var(--police-titres);
 }
+
+
+/* 
+1024x768 à 1920x1080 Pc
+360x640 à 414x896 Mobile
+601x962 à 1280x800
+*/
