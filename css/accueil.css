@@ -2,7 +2,6 @@
 ***************************** Général */
 
 .accueil{
-    position: relative;
     max-width: 100vw;
     max-height: 100vh;
     text-align: center;
@@ -98,13 +97,13 @@
 
 .nav {
     z-index: 100;
+    top: 82vh;
     height: 100%;
-    top: 42vw;
 }
 
 #nav-accueil{
+    top: -3.5vmin;
     position: sticky;
-    top: 0;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -173,9 +172,10 @@
 /***************************** Contacter */
 
 #contacter-courriel{
-    z-index: 100;
     position: absolute;
-    height: 100vh;
+    z-index: 100;
+    height: 160%;
+    min-height: min-content;
     background-color: transparent;
     right: 1rem;
     padding: 1rem;
@@ -184,7 +184,7 @@
 
 #contacter-courriel a{
     position: sticky;
-    top: 0;
+    top: 1vmin;
     text-decoration: none;
 }
 
