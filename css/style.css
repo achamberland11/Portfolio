@@ -4,8 +4,17 @@
     background-color: var(--noir);
 }
 
+html {
+    font-size: 2vmin;
+    scroll-behavior: smooth;
+}
+
 body, body a{
     color: var(--texte);
+}
+
+.haut-de-page{
+    top: 1.25rem;
 }
 
 h1, h2{
@@ -14,6 +23,29 @@ h1, h2{
 
 h1, h2, h3, a{
     font-family: var(--police-titres);
+}
+
+.ligne-separation {
+    height: 10px;
+    width: 100vw;
+    border-top: 1px dotted var(--ombres);
+}
+
+header{
+    border-bottom: dotted 1px var(--texte);
+}
+
+main {
+    background-color: var(--noir);
+}
+
+#projets{
+    height: 100vh;
+}
+
+footer {
+    height: 40vh;
+    background-color: var(--noir-fonce);
 }
 
 
