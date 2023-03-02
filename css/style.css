@@ -27,10 +27,6 @@ h1, h2, h3, a{
     font-family: var(--police-titres);
 }
 
-header{
-    border-bottom: dotted 1px var(--texte);
-}
-
 main {
     background-color: var(--noir);
 }

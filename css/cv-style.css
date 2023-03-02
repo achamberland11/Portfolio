@@ -1,3 +1,53 @@
 html {
     max-height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    height: 10vh;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 90vh;
+}
+
+.cv {
+    position: relative;
+    width: 40.9425vmin;
+    height: 53vmin;
+    z-index: 12;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0.5vmin solid var(--texte);
+    margin-left: 3.5vmin;
+    margin-right: 3.5vmin;
+    margin-top: -10vmin;
+}
+
+.cv:hover {
+    
+}
+
+#non-imp {
+    background-image: url("../fichiers/CV\ Antoine\ Chamberland.png");
+}
+
+#imp {
+    background-image: url("../fichiers/CV\ Antoine\ Chamberland\ -\ Version\ Imprimable.png");
+}
+
+#imp::before {
+    content: '';
+    position: absolute;
+    top: 0.01%;
+    bottom: 0.01%;
+    left: 0.01%;
+    right: 0.01%;
+    border: 0.5vmin solid var(--noir-fonce);
 }
