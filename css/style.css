@@ -49,7 +49,7 @@ main {
 }
 
 footer {
-    height: 100vh;
+    height: 60vh;
     background-color: var(--noir-fonce);
 }
 
