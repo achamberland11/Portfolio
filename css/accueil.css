@@ -1,31 +1,10 @@
 /******************************************* Style de la page d'accueil
 ***************************** Général */
 
-.accueil{
+#accueil{
     max-width: 100vw;
     max-height: 100vh;
     text-align: center;
-}
-
-.presentation{
-    position: absolute;
-    left: 1.25rem;
-    text-align: left;
-    padding: 1rem;
-    font-size: 2rem;
-    background-color: transparent;
-    user-select: none;
-}
-
-.presentation h1{
-    margin-top: none;
-    background-color: transparent;
-}
-
-.presentation h2{
-    margin: 1rem;
-    padding: 1rem;
-    background-color: transparent;
 }
 
 
@@ -88,7 +67,6 @@
 
 #titre-accueil span{
     display: inline-block;
-    background-color: transparent;
     animation: 1.5s ease-out 0s 1 titre-actualisation;
 }
 
@@ -96,64 +74,11 @@
 /***************************** Navigation */
 
 .nav {
-    z-index: 100;
-    top: 82vh;
-    height: 100%;
+    height: 150%;
 }
 
-#nav-accueil{
-    top: -3.5vmin;
-    position: sticky;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-color: transparent;
-}
-
-#nav-accueil > h2{
-    opacity: 100%;
-    transition: opacity 0.15s ease-in-out;
-}
-
-#nav-accueil:hover > h2{
-    opacity: 25%;
-}
-
-
-/* Sous-catégories */
-#nav-accueil a{
-    text-decoration: none;
-    margin: 1rem;
-    visibility: hidden;
-    color: var(--texte);
-    opacity: 0%;
-    transition: visibility 0s, opacity 0.2s ease-out;
-    background-color: transparent;
-}
-
-#nav-accueil:hover > a{
-    visibility: visible;
-    opacity: 100%;
-    transition: transform 0.5s, text-shadow 0.3s linear;
-}
-
-#nav-accueil a:hover{
-    transform: scale(1.1);
-    text-shadow: var(--ombres-50) 2px 2px;
-}
-
-/* Navigation lien accueil (Page active) */
-#nav-accueil:hover > #a-accueil{
-    text-shadow: var(--ombres-50) 2px 2px;
-    opacity: 50%;
-}
-#nav-accueil:hover > #a-accueil span{
-    visibility: visible;
-    opacity: 100%;
-}
-#nav-accueil:hover > #a-accueil:hover{
-    text-decoration: none;
+#contacter-courriel {
+    height: 250%;
 }
 
 /* Crochets */
@@ -167,27 +92,6 @@
     visibility: visible;
     opacity: 100%;
 }
-
-
-/***************************** Contacter */
-
-#contacter-courriel{
-    position: absolute;
-    z-index: 100;
-    height: 160%;
-    min-height: min-content;
-    background-color: transparent;
-    right: 1rem;
-    padding: 1rem;
-    font-size: 4vmin;
-}
-
-#contacter-courriel a{
-    position: sticky;
-    top: 1vmin;
-    text-decoration: none;
-}
-
 
 
 /******************************************* Animations keyframe

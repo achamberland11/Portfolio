@@ -49,8 +49,12 @@ main {
 }
 
 footer {
-    height: 40vh;
+    height: 100vh;
     background-color: var(--noir-fonce);
+}
+
+h2 span, span{
+    background-color: transparent;
 }
 
 
