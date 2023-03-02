@@ -11,9 +11,6 @@ html, body {
     scroll-behavior: smooth;
 }
 
-body{
-}
-
 body, body a{
     color: var(--texte);
 }
@@ -28,12 +25,6 @@ h1, h2{
 
 h1, h2, h3, a{
     font-family: var(--police-titres);
-}
-
-.ligne-separation {
-    height: 10px;
-    width: 100vw;
-    border-top: 1px dotted var(--ombres);
 }
 
 header{
