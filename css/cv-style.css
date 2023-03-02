@@ -4,6 +4,7 @@ html {
 }
 
 header {
+    padding-top: 5vmin;
     height: 10vh;
     text-align: center;
 }
@@ -24,14 +25,29 @@ main {
     z-index: 12;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 0.5vmin solid var(--texte);
+    border: 0.5vmin solid var(--ombres-50);
     margin-left: 3.5vmin;
     margin-right: 3.5vmin;
-    margin-top: -10vmin;
+    margin-top: -18vmin;
+    transition: transform 0.5s, box-shadow 0.25s linear;
 }
 
 .cv:hover {
-    
+    transform: translateY(-10px);   
+    box-shadow: 8px 8px 1px var(--ombres);
+}
+
+.cv a {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    font-size: 2.5vmin;
+    font-weight: bolder;
+    background-color: transparent;
+}
+
+#imp a {
+    color: var(--noir);
 }
 
 #non-imp {
@@ -41,7 +57,7 @@ main {
 #imp {
     background-image: url("../fichiers/CV\ Antoine\ Chamberland\ -\ Version\ Imprimable.png");
 }
-
+/* 
 #imp::before {
     content: '';
     position: absolute;
@@ -50,4 +66,4 @@ main {
     left: 0.01%;
     right: 0.01%;
     border: 0.5vmin solid var(--noir-fonce);
-}
+} */

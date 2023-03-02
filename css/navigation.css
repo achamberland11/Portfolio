@@ -109,7 +109,6 @@
     content: '';
     position: absolute;
     border-bottom: 0.25rem solid var(--texte);
-    /* visibility: hidden; */
     width: 0;
     height: 0;
     left: 0%;
