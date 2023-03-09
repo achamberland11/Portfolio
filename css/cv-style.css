@@ -18,6 +18,11 @@ main {
     height: 90vh;
 }
 
+h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
 .cv {
     position: relative;
     width: 40.9425vmin;
