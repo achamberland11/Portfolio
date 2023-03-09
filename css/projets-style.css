@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projets {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.projet {
+    z-index: 100;
+    min-width: 20vw;
+    min-height: 20vw;
+    background-size: contain;
+    margin-top: -12vmin;
+    background-image: url("../fichiers/projets/bananarama-couverture.png");
+}

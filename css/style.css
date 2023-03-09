@@ -27,6 +27,21 @@ h1, h2, h3, a{
     font-family: var(--police-titres);
 }
 
+.conteneur {
+    position: relative;
+    z-index: 12;
+    background-repeat: no-repeat;
+    border: 0.5vmin solid var(--ombres-50);
+    margin-left: 3.5vmin;
+    margin-right: 3.5vmin;
+    transition: transform 0.5s, box-shadow 0.25s linear;
+}
+
+.conteneur:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 1px var(--ombres);
+}
+
 main {
     background-color: var(--noir);
 }

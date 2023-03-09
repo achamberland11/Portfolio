@@ -9,37 +9,16 @@ header {
     text-align: center;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    height: 90vh;
-}
-
 h1 {
     font-size: 3rem;
     text-decoration: underline;
 }
 
 .cv {
-    position: relative;
     width: 40.9425vmin;
     height: 53vmin;
-    z-index: 12;
     background-size: cover;
-    background-repeat: no-repeat;
-    border: 0.5vmin solid var(--ombres-50);
-    margin-left: 3.5vmin;
-    margin-right: 3.5vmin;
     margin-top: -18vmin;
-    transition: transform 0.5s, box-shadow 0.25s linear;
-}
-
-.cv:hover {
-    transform: translateY(-10px);   
-    box-shadow: 8px 8px 1px var(--ombres);
 }
 
 .cv a {
@@ -56,11 +35,11 @@ h1 {
 }
 
 #non-imp {
-    background-image: url("../fichiers/CV\ Antoine\ Chamberland.png");
+    background-image: url("../fichiers/cv/CV.png");
 }
 
 #imp {
-    background-image: url("../fichiers/CV\ Antoine\ Chamberland\ -\ Version\ Imprimable.png");
+    background-image: url("../fichiers/cv/CV-Imprimable.png");
 }
 /* 
 #imp::before {
