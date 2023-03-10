@@ -37,8 +37,10 @@
 
 #nav-accueil > h2{
     opacity: 100%;
+    position: relative;
     transition: opacity 0.15s ease-in-out;
     background-color: transparent;
+    z-index: 150;
 }
 
 #nav-accueil:hover > h2{
@@ -103,6 +105,7 @@
     top: 1vmin;
     text-decoration: none;
     background-color: transparent;
+    z-index: 150;
 }
 
 #contacter-courriel a::after {
