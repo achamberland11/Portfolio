@@ -50,11 +50,6 @@ main {
     height: 100vh;
 }
 
-footer {
-    height: 60vh;
-    background-color: var(--noir-fonce);
-}
-
 h2 span, span{
     background-color: transparent;
 }
