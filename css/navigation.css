@@ -102,6 +102,7 @@
 
 #contacter-courriel a{
     position: sticky;
+    padding-left: 0.4rem;
     top: 1vmin;
     text-decoration: none;
     background-color: transparent;
@@ -120,7 +121,14 @@
     transition: visibility 0.15s linear, height 0.15s linear, width 0.15s linear;
 }
 #contacter-courriel a:hover:after {
-    width: 100%;
+    width: 120%;
+    height: 0;
+    border-bottom: 0.25rem solid var(--texte);
+    visibility: visible;
+    transition: visibility 0.15s linear, height 0.15s linear, width 0.15s linear;
+}
+#contacter-courriel #email:hover:after {
+    width: 110%;
     height: 0;
     border-bottom: 0.25rem solid var(--texte);
     visibility: visible;

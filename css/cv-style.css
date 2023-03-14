@@ -9,6 +9,15 @@ header {
     text-align: center;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 90vh;
+}
+
 h1 {
     font-size: 3rem;
     text-decoration: underline;
