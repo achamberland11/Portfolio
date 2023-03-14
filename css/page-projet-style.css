@@ -6,8 +6,17 @@ header{
 }
 
 main{
-    height: 100vh;
+    height: 60vh;
 }
 
 video {
+}
+
+#autres-projets {    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
 }
