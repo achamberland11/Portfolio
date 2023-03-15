@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: var(--noir);
 }
 
 html, body {
@@ -9,6 +8,8 @@ html, body {
     height: 100%;
     font-size: 2vmin;
     scroll-behavior: smooth;
+    background-color: var(--noir);
+    overflow-x: hidden;
 }
 
 body, body a{
@@ -25,6 +26,10 @@ h1, h2{
 
 h1, h2, h3, a{
     font-family: var(--police-titres);
+}
+
+p {
+    font-family: var(--police-texte);
 }
 
 .conteneur {
@@ -60,3 +65,15 @@ h2 span, span{
 360x640 à 414x896 Mobile
 601x962 à 1280x800
 */
+
+@media screen and (max-width: 1000px) {
+    #titre-accueil h1 br{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #titre-accueil h1 br{
+        display: none;
+    }
+}

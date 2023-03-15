@@ -103,7 +103,7 @@
 #contacter-courriel a{
     position: sticky;
     padding-left: 0.4rem;
-    top: 1vmin;
+    top: 20px;
     text-decoration: none;
     background-color: transparent;
     z-index: 150;
