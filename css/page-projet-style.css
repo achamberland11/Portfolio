@@ -6,7 +6,12 @@ header{
     align-items: center;
 }
 
+video {
+    margin-top: 8vmin;
+}
+
 main{
+    margin-top: 3vmin;
     display: flex;
     flex-flow: column;
 }

@@ -20,7 +20,6 @@ main {
     min-width: 20vw;
     min-height: 20vw;
     background-size: contain;
-    background-image: url("../fichiers/projets/bananarama-couverture.png");
 }
 
 .projet::before {
@@ -38,6 +37,23 @@ main {
     opacity: 5%;
     background-color: var(--ombres);
 }
+
+#transit {
+    background-image: url("../fichiers/images/myositis.png");
+}
+
+#MM {
+    background-image: url("../fichiers/images/myositis.png");
+}
+
+#moustache{
+    background-image: url("../fichiers/images/bananarama-couverture.png");
+}
+
+#bananarama {
+    background-image: url("../fichiers/images/bananarama-couverture.png");
+}
+
 
 .info-projets {
     width: 100%;
