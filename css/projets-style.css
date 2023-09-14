@@ -7,19 +7,21 @@ main {
 #projets {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-}
-#projets .projet {
-    margin-top: -12vmin;
+    width: 85vw;
+    height: 90vh;
+    padding-bottom: -50vmin;
 }
 
 .projet {
     z-index: 100;
-    min-width: 20vw;
-    min-height: 20vw;
+    min-width: 18vw;
+    min-height: 18vw;
     background-size: contain;
+    background-color: var(--noir);
+    top: 6vmin;
 }
 
 .projet::before {

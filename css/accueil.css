@@ -1,11 +1,32 @@
 /******************************************* Style de la page d'accueil
 ***************************** Général */
 
+header{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../fichiers/images/Wireframe-Torus3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 #accueil{
     max-width: 100vw;
     max-height: 100vh;
     text-align: center;
 }
+
+main{
+    width: 100vw;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../fichiers/images/Wireframe-Torus3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 
 
 /***************************** Titre (Antoine Chamberland) */

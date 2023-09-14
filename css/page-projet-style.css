@@ -11,15 +11,16 @@ video {
 }
 
 main{
-    margin-top: 3vmin;
     display: flex;
     flex-flow: column;
+    overflow: hidden;
 }
 
 .desc-projet {
-    margin: 20vmin;
-    margin-top: 0vmin;
-    margin-bottom: 12vmin;
+    margin-left: 20vmin;
+    margin-right: 20vmin;
+    margin-bottom: 5vmin;
+    margin-top: 1.5rem;
     text-align: justify;
     z-index: 120;
 }
@@ -31,16 +32,17 @@ main{
 #autres-projets {    
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 50vh;
+    width: 80vw;
+    margin-top: -5rem;
 }
 
 #autres-projets .projet {
-    min-width: 20vw;
-    min-height: 20vw;
-    margin-bottom: 10vmin;
+    min-width: 12vw;
+    min-height: 12vw;
+    margin-top: 1rem;
 }
 
 .conteneur-liens{
@@ -69,4 +71,23 @@ main{
 
 .conteneur-liens a{
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #autres-projets {    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 60vh;
+    }
+    
+    #autres-projets .projet {
+        min-width: 30vw;
+        min-height: 30vw;
+        margin-bottom: 10vmin;
+    }
 }

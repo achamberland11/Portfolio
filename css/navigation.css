@@ -48,6 +48,31 @@
 }
 
 
+@media screen and (max-width: 1000px) {
+    .presentation{
+        width: 60%;
+        position: absolute;
+        left: 0.5rem;
+        text-align: left;
+        padding: rem;
+        font-size: 2rem;
+        background-color: transparent;
+        user-select: none;
+    }
+
+    .presentation h2{
+        margin-top: 1rem;
+        margin-right: 0rem;
+        padding-top: 1rem;
+        padding-right: 0rem;
+    }
+
+    #nav-accueil a{
+        margin: -2rem;
+    }
+}
+
+
 
 /***************************** Navigation */
 
