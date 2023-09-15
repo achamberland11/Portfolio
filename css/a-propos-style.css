@@ -1,0 +1,135 @@
+body {
+    max-height: 100vh;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../fichiers/images/Wireframe-Torus3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-flow: column;
+    background-color: transparent;
+    margin-bottom: 15vmin;
+}
+
+.infos-perso {
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 2vh;
+}
+
+.bloc-info {
+    max-height: 20vh;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: justify;
+    border: 5px solid var(--texte);
+    box-shadow: var(--ombres-50) 3px 3px;
+}
+
+.bloc-info h2 {
+    text-align: center;
+}
+
+.bloc-info:nth-child(odd) {
+    margin-right: 50vw;
+}
+
+.bloc-info:nth-child(even) {
+    margin-left: 50vw;
+    /*direction: rtl;*/
+}
+
+main h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+
+
+
+
+/***************************** Titre (Antoine Chamberland) */
+
+
+
+#titre-accueil{
+    font-size: 4.5vmin;
+}
+
+#titre-accueil::before {
+    content: '';
+    position: absolute;
+    border: 0.35rem solid var(--texte);
+    border-right: none;
+    border-bottom: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: -5%;
+    box-sizing: border-box;
+    transition: visibility 0.25s linear, height 0.25s linear, width 0.25s linear;
+}
+#titre-accueil:hover:before {
+    height: 100%;
+    width: 100%;
+    border: 0.35rem solid var(--texte);
+    border-right: none;
+    border-bottom: none;
+    visibility: visible;
+    transition: visibility 0.25s linear, height 0.25s linear, width 0.25s linear;
+}
+
+#titre-accueil::after {
+    content: '';
+    position: absolute;
+    border: 0.35rem solid var(--texte);
+    border-left: none;
+    border-top: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 5%;
+    box-sizing: border-box;
+    transition: visibility 0.25s linear, height 0.25s linear, width 0.25s linear;
+}
+#titre-accueil:hover:after {
+    height: 100%;
+    width: 100%;
+    border: 0.35rem solid var(--texte);
+    border-left: none;
+    border-top: none;
+    visibility: visible;
+    transition: visibility 0.25s linear, height 0.25s linear, width 0.25s linear;
+}
+
+
+#titre-accueil span{
+    display: inline-block;
+    animation: 1.5s ease-out 0s 1 titre-actualisation;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    main{
+        margin-top: 25vmin;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main{
+        margin-top: 15vmin;
+    }
+}
