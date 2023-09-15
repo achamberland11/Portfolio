@@ -25,6 +25,10 @@ main{
     z-index: 120;
 }
 
+#titre-autre {
+    margin-top: -2rem;
+}
+
 #titre-autre h1 {
     margin-bottom: 3vmin;
 }
