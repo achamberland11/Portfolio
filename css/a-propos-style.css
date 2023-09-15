@@ -20,9 +20,9 @@ main {
 
 .infos-perso {
     text-align: center;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding-top: 2vh;
+    margin-left: 4.4rem;
+    margin-right: 4.4rem;
+    padding-top:0.1rem;
 }
 
 .bloc-info {
@@ -60,7 +60,9 @@ main h1 {
 
 /***************************** Titre (Antoine Chamberland) */
 
-
+.haut-de-page {
+    top: 0.75rem;
+}
 
 #titre-accueil{
     font-size: 4.5vmin;
@@ -124,12 +126,12 @@ main h1 {
 
 @media screen and (max-width: 1000px) {
     main{
-        margin-top: 25vmin;
+        margin-top: 24vmin;
     }
 }
 
 @media screen and (min-width: 1000px) {
     main{
-        margin-top: 15vmin;
+        margin-top: 14vmin;
     }
 }
