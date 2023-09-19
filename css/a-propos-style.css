@@ -23,12 +23,12 @@ main {
     margin-left: 4.4rem;
     margin-right: 4.4rem;
     padding-top:0.75rem;
+    max-height: 80vh;
 }
 
 .bloc-info {
-    max-height: 20vh;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: justify;
@@ -46,7 +46,6 @@ main {
 
 .bloc-info:nth-child(even) {
     margin-left: 50vw;
-    /*direction: rtl;*/
 }
 
 main h1 {
@@ -128,10 +127,36 @@ main h1 {
     main{
         margin-top: 24vmin;
     }
+
+    .bloc-info:nth-child(even) {
+        margin-top: -25%;
+        margin-bottom: -25%;
+    }
 }
 
 @media screen and (min-width: 1000px) {
     main{
         margin-top: 14vmin;
+    }
+
+    .bloc-info:nth-child(even) {
+        margin-top: -8%;
+        margin-bottom: -8%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .bloc-info:nth-child(even) {
+        margin-top: -5%;
+        margin-bottom: -5%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+
+    .bloc-info:nth-child(even) {
+        margin-top: -2%;
+        margin-bottom: -2%;
     }
 }
