@@ -30,6 +30,7 @@ h1, h2, h3, a{
 
 p {
     font-family: var(--police-texte);
+    line-height: 1.35rem;
 }
 
 .conteneur {
