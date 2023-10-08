@@ -52,6 +52,10 @@ main {
     background-image: url("../fichiers/images/myositis.png");
 }
 
+#chapeau {
+    background-image: url("../fichiers/images/chapeau.png");
+}
+
 #moustache{
     background-image: url("../fichiers/images/moustache.png");
 }
