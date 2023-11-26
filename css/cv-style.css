@@ -3,10 +3,18 @@ html {
     overflow: hidden;
 }
 
+body {
+}
+
 header {
     padding-top: 5vmin;
     height: 10vh;
     text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../fichiers/images/Wireframe-Torus3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 main {
@@ -16,6 +24,11 @@ main {
     align-items: center;
     align-content: center;
     height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../fichiers/images/Wireframe-Torus3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
