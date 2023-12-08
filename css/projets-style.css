@@ -40,6 +40,11 @@ main {
     background-color: var(--ombres);
 }
 
+video {
+    width: 65% !important;
+    height: auto !important;
+}
+
 #c-d {
     background-image: url("../fichiers/images/CD.jpg");
 }
