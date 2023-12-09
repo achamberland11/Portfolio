@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     donneesProjets.forEach((projet) => {
         const elementProjet = document.createElement("a");
-        elementProjet.href = projet.lien;
+        elementProjet.href = projet.lienIndex;
 
         const vignette = projet.urlVignette;
         elementProjet.innerHTML = `
