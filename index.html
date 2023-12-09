@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <script src="js/projets.js"></script>
     
     <title>Portfolio</title>
 </head>
@@ -52,49 +54,29 @@
     <section id="image-fond"></section>
 
     <main>
+        <!-- Liste des projets -->
         <section class="section" id="projets">
-            <a href="index-projets/chroniques-dystopiques.html"><div id="c-d" class="projet conteneur">
-                <div class="info-projets">
-                    <h2>Chroniques Dystopiques</h2>
-                    <h3>Unity 3D - C#</h3>
-                    <h4>2023 - Projet en Équipe (4)</h4>
-                </div>
-            </div></a>
-            <a href="index-projets/transit.html"><div id="transit" class="projet conteneur">
-                <div class="info-projets">
-                    <h2>Transit</h2>
-                    <h3>Unity 3D - C#</h3>
-                    <h4>2022</h4>
-                </div>
-            </div></a>
-            <a href="index-projets/myositis.html"><div id="MM" class="projet conteneur">
-                <div class="info-projets">
-                    <h2>Myosotis Memories</h2>
-                    <h3>Unity 2D - C# (Gamejam)</h3>
-                    <h4>2023 - Projet en Équipe (4)</h4>
-                </div>
-            </div></a>
-            <a href="index-projets/chapeau-spree.html"><div id="chapeau" class="projet conteneur">
-                <div class="info-projets">
-                    <h2>Chapeau Spree</h2>
-                    <h3>Unity 3D - C# (Multijoueur)</h3>
-                    <h4>2023 - Projet en Équipe (2)</h4>
-                </div>
-            </div></a>
-            <a href="index-projets/moustache.html"><div id="moustache" class="projet conteneur">
-                <div class="info-projets">
-                    <h2>L'aventure de la Moustache</h2>
-                    <h3>Unity 2D - C#</h3>
-                    <h4>2022</h4>
-                </div>
-            </div></a>
-            <a href="index-projets/bananarama.html"><div id="bananarama" class="projet conteneur">
-                <div class="info-projets">
-                    <h2>Bananarama</h2>
-                    <h3>JavaScript - HTML</h3>
-                    <h4>2021</h4>
-                </div>
-            </div></a>
+
+            <script>
+                const conteneurProjets = document.getElementById("projets");
+
+                donneesProjets.forEach((projet) => {
+                    const elementProjet = document.createElement("a");
+                    elementProjet.href = projet.lien;
+
+                    const id = projet.id || '';
+                    elementProjet.innerHTML = `
+                        <div id="${id}" class="projet conteneur">
+                        <div class="info-projets">
+                            <h2>${projet.titre}</h2>
+                            <h3>${projet.technologie}</h3>
+                            <h4>${projet.date}</h4>
+                        </div>
+                        </div>
+                    `;
+                    conteneurProjets.appendChild(elementProjet);
+                });
+            </script>
         </section>
     </main>
 

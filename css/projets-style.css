@@ -75,11 +75,14 @@ video {
     position: absolute;
     bottom: 0px;
     background-color: var(--noir3-op);
+    min-height: 1.15rem;
 }
 
 .info-projets h2, .info-projets h3, .info-projets h4 {
     background-color: transparent;
-    padding: 0.25vmin;
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    line-height: 1.1em;
 }
 
 .info-projets h3, .info-projets h4 {
