@@ -56,7 +56,7 @@ const donneesProjets = [
         technologie: "JavaScript - HTML",
         date: "2021",
         lien: "index-projets/bananarama.html",
-                lien: "index-projets/bananarama.html",
+        lienIndex: "/bananarama.html",
         id: "bananarama",
         urlVignette: "url('../fichiers/images/bananarama-couverture.png');",
         urlDirectVignette: "url('fichiers/images/bananarama-couverture.png');",
