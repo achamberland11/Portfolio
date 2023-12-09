@@ -6,10 +6,6 @@ header{
     align-items: center;
 }
 
-video {
-    margin-top: 15vh;
-}
-
 main{
     display: flex;
     flex-flow: column;
@@ -49,28 +45,34 @@ main{
     margin-top: 1rem;
 }
 
+video {
+    margin-top: 15vh;
+}
+
 .conteneur-liens{
     display: flex;
     justify-content: space-evenly;
-    margin: 3vmin;
+    margin-bottom: 6rem;
+    height: 2rem;
     width: 30vw;
 }
 
 .lien-projet{
-    margin: 2.5vmin;
-    padding: 2vmin;
-    width: 12vmin;
+    position: relative;
+    padding: 0.25vmin;
+    padding-top: 0vmin;
+    width: 10vmin;
     color: var(--bleu);
     background-color: var(--ombres);
-    border-radius: 50px;
-    transition: transform 0.5s, box-shadow 0.15s linear;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: padding-top 50ms ease-in;
     font-size: larger;
     text-align: center;
 }
 
 .lien-projet:hover {
-    transform: translateY(-3px);
-    /* box-shadow: 5px 5px 1px var(--ombres-50); */
+    padding-top: 1vmin;
 }
 
 .conteneur-liens a{
