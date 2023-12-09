@@ -45,31 +45,6 @@ video {
     height: auto !important;
 }
 
-#c-d {
-    background-image: url("");
-}
-
-#transit {
-    background-image: url("../fichiers/images/transit.png");
-}
-
-#MM {
-    background-image: url("../fichiers/images/myositis.png");
-}
-
-#chapeau {
-    background-image: url("../fichiers/images/chapeau.png");
-}
-
-#moustache{
-    background-image: url("../fichiers/images/moustache.png");
-}
-
-#bananarama {
-    background-image: url("../fichiers/images/bananarama-couverture.png");
-}
-
-
 .info-projets {
     width: 100%;
     position: absolute;
