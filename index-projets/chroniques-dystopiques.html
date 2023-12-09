@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <script src="../js/projets.js"></script>
     
     <title>Portfolio | Chroniques Dystopiques</title>
 </head>
@@ -70,41 +72,48 @@
         <div id="titre-autre"><h1>Autres projets</h1></div>
 
         <section class="section" id="autres-projets">
-            <a href="/Portfolio/index-projets/transit.html"><div id="transit" class="projet conteneur">
-                <div class="info-projets">
-                    <h2>Transit</h2>
-                    <h3>Unity 3D - C#</h3>
-                    <h4>2022</h4>
-                </div>
-            </div></a>
-            <a href="/Portfolio/index-projets/myositis.html"><div id="MM" class="projet conteneur">
-                <div class="info-projets">
-                    <h2>Myosotis Memories</h2>
-                    <h3>Unity 2D - C# (Gamejam)</h3>
-                    <h4>2023 - Projet en Équipe (4)</h4>
-                </div>
-            </div></a>
-            <a href="/Portfolio/index-projets/chapeau-spree.html"><div id="chapeau" class="projet conteneur">
-                <div class="info-projets">
-                    <h2>Chapeau Spree</h2>
-                    <h3>Unity 3D - C# (Multijoueur)</h3>
-                    <h4>2023 - Projet en Équipe (2)</h4>
-                </div>
-            </div></a>
-            <a href="/Portfolio/index-projets/moustache.html"><div id="moustache" class="projet conteneur">
-                <div class="info-projets">
-                    <h2>L'aventure de la Moustache</h2>
-                    <h3>Unity 2D - C#</h3>
-                    <h4>2022</h4>
-                </div>
-            </div></a>
-            <a href="/Portfolio/index-projets/bananarama.html"><div id="bananarama" class="projet conteneur">
-                <div class="info-projets">
-                    <h2>Bananarama</h2>
-                    <h3>JavaScript - HTML</h3>
-                    <h4>2021</h4>
-                </div>
-            </div></a>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const lienProjet = window.location.pathname.split('/').pop().toLowerCase();
+            
+                    let index = -1;
+                    for (let i = 0; i < donneesProjets.length; i++) {
+                        const lienRelatif = donneesProjets[i].lien.split('/').pop().toLowerCase();
+                        
+                        if (lienRelatif === lienProjet) {
+                            index = i;
+                            break;
+                        }
+                    }
+
+
+                    console.log(index);
+            
+                    if (index !== -1) {
+                        donneesProjets.splice(index, 1);
+                        console.log(donneesProjets);
+                    }
+            
+                    const conteneurProjets = document.getElementById("autres-projets");
+            
+                    donneesProjets.forEach((projet) => {
+                        const elementProjet = document.createElement("a");
+                        elementProjet.href = projet.lien;
+            
+                        const vignette = projet.urlVignette;
+                        elementProjet.innerHTML = `
+                            <div  style="background-image: ${vignette}" class="projet conteneur">
+                            <div class="info-projets">
+                                <h2>${projet.titre}</h2>
+                                <h3>${projet.technologie}</h3>
+                                <h4>${projet.date}</h4>
+                            </div>
+                            </div>
+                        `;
+                        conteneurProjets.appendChild(elementProjet);
+                    });
+                });
+            </script>
         </section>
     </main>
 

@@ -64,9 +64,9 @@
                     const elementProjet = document.createElement("a");
                     elementProjet.href = projet.lien;
 
-                    const id = projet.id || '';
+                    const vignette = projet.urlVignette;
                     elementProjet.innerHTML = `
-                        <div id="${id}" class="projet conteneur">
+                        <div  style="background-image: ${vignette}" class="projet conteneur">
                         <div class="info-projets">
                             <h2>${projet.titre}</h2>
                             <h3>${projet.technologie}</h3>

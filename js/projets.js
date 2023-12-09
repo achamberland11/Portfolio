@@ -5,6 +5,7 @@ const donneesProjets = [
         date: "2023 - Projet en Équipe (4)",
         lien: "index-projets/chroniques-dystopiques.html",
         id: "c-d",
+        urlVignette: "url('../fichiers/images/CD.jpg');",
     },
     {
         titre: "Transit",
@@ -12,6 +13,7 @@ const donneesProjets = [
         date: "2022",
         lien: "index-projets/transit.html",
         id: "transit",
+        urlVignette: "url('../fichiers/images/transit.png');",
     },
     {
         titre: "Myosotis Memories",
@@ -19,6 +21,7 @@ const donneesProjets = [
         date: "2023 - Projet en Équipe (4)",
         lien: "index-projets/myositis.html",
         id: "MM",
+        urlVignette: "url('../fichiers/images/myositis.png');",
     },
     {
         titre: "Chapeau Spree",
@@ -26,6 +29,7 @@ const donneesProjets = [
         date: "2023 - Projet en Équipe (2)",
         lien: "index-projets/chapeau-spree.html",
         id: "chapeau",
+        urlVignette: "url('../fichiers/images/chapeau.png');",
     },
     {
         titre: "L'aventure de la Moustache",
@@ -33,6 +37,7 @@ const donneesProjets = [
         date: "2022",
         lien: "index-projets/moustache.html",
         id: "moustache",
+        urlVignette: "url('../fichiers/images/moustache.png');",
     },
     {
         titre: "Bananarama",
@@ -40,5 +45,6 @@ const donneesProjets = [
         date: "2021",
         lien: "index-projets/bananarama.html",
         id: "bananarama",
+        urlVignette: "url('../fichiers/images/bananarama-couverture.png');",
     },
 ];
