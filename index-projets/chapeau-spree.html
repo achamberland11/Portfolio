@@ -22,20 +22,9 @@
     <title>Portfolio | Chapeau Spree</title>
 </head>
 <body>
-    <div class="haut-de-page" id="contacter-courriel">
-        <a href="https://www.linkedin.com/in/antoine-chamberland-978195232/" target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=f0f8ff" width="32" height="32"></a>
-        <a href="https://github.com/achamberland11" target="_blank"><img src="https://s2.svgbox.net/octicons.svg?ic=mark-github-bold&color=f0f8ff" width="32" height="32"></a>
-        <a href="mailto:a.chamberland11@gmail.com">// Contacter</a>
-        <!-- <span class="material-symbols-outlined">mail</span> -->
-    </div>
-    <div class="presentation nav">
-        <div id="nav-accueil">
-            <h2><span>[</span>Portfolio<span>]</span></h2>
-            <a href="/Portfolio/#accueil" id="a-accueil"><span>[</span>Accueil<span>]</span></a>
-            <a href="/Portfolio/#projets" id="a-projets"><span>[</span>Projets<span>]</span></a>
-            <a href="/Portfolio/cv.html" id="a-cv"><span>[</span>CV<span>]</span></a>
-        </div>
-    </div>
+    <nav id="nav">
+        <script src="../js/entete.js"></script>
+    </nav>
     <header>
         <section class="section" id="accueil">
                 <div class="presentation haut-de-page" id="titre-accueil">
@@ -68,48 +57,7 @@
         <div id="titre-autre"><h1>Autres projets</h1></div>
 
         <section class="section" id="autres-projets">
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const lienProjet = window.location.pathname.split('/').pop().toLowerCase();
-            
-                    let index = -1;
-                    for (let i = 0; i < donneesProjets.length; i++) {
-                        const lienRelatif = donneesProjets[i].lien.split('/').pop().toLowerCase();
-                        
-                        if (lienRelatif === lienProjet) {
-                            index = i;
-                            break;
-                        }
-                    }
-
-
-                    console.log(index);
-            
-                    if (index !== -1) {
-                        donneesProjets.splice(index, 1);
-                        console.log(donneesProjets);
-                    }
-            
-                    const conteneurProjets = document.getElementById("autres-projets");
-            
-                    donneesProjets.forEach((projet) => {
-                        const elementProjet = document.createElement("a");
-                        elementProjet.href = projet.lien;
-            
-                        const vignette = projet.urlVignette;
-                        elementProjet.innerHTML = `
-                            <div  style="background-image: ${vignette}" class="projet conteneur">
-                            <div class="info-projets">
-                                <h2>${projet.titre}</h2>
-                                <h3>${projet.technologie}</h3>
-                                <h4>${projet.date}</h4>
-                            </div>
-                            </div>
-                        `;
-                        conteneurProjets.appendChild(elementProjet);
-                    });
-                });
-            </script>
+            <script src="../js/autres-projets.js"></script>
         </section>
     </main>
 

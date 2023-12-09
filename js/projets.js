@@ -6,8 +6,6 @@ const donneesProjets = [
         lien: "index-projets/chroniques-dystopiques.html",
         id: "c-d",
         urlVignette: "url('../fichiers/images/CD.jpg');",
-        type: "",
-        description: "",
     },
     {
         titre: "Transit",
@@ -16,8 +14,6 @@ const donneesProjets = [
         lien: "index-projets/transit.html",
         id: "transit",
         urlVignette: "url('../fichiers/images/transit.png');",
-        type: "",
-        description: "",
     },
     {
         titre: "Myosotis Memories",
@@ -26,8 +22,6 @@ const donneesProjets = [
         lien: "index-projets/myositis.html",
         id: "MM",
         urlVignette: "url('../fichiers/images/myositis.png');",
-        type: "",
-        description: "",
     },
     {
         titre: "Chapeau Spree",
@@ -36,8 +30,6 @@ const donneesProjets = [
         lien: "index-projets/chapeau-spree.html",
         id: "chapeau",
         urlVignette: "url('../fichiers/images/chapeau.png');",
-        type: "",
-        description: "",
     },
     {
         titre: "L'aventure de la Moustache",
@@ -56,7 +48,5 @@ const donneesProjets = [
         lien: "index-projets/bananarama.html",
         id: "bananarama",
         urlVignette: "url('../fichiers/images/bananarama-couverture.png');",
-        type: "",
-        description: "",
     },
 ];
