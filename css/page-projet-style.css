@@ -64,8 +64,8 @@ video {
     width: 10vmin;
     color: var(--bleu);
     background-color: var(--ombres);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     transition: padding-top 50ms ease-in;
     font-size: larger;
     text-align: center;
