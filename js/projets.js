@@ -6,6 +6,7 @@ const donneesProjets = [
         lien: "index-projets/chroniques-dystopiques.html",
         id: "c-d",
         urlVignette: "url('../fichiers/images/CD.jpg');",
+        urlDirectVignette: "url('/fichiers/images/CD.jpg');",
     },
     {
         titre: "Transit",
@@ -14,6 +15,7 @@ const donneesProjets = [
         lien: "index-projets/transit.html",
         id: "transit",
         urlVignette: "url('../fichiers/images/transit.png');",
+        urlDirectVignette: "url('/fichiers/images/transit.png');",
     },
     {
         titre: "Myosotis Memories",
@@ -22,6 +24,7 @@ const donneesProjets = [
         lien: "index-projets/myositis.html",
         id: "MM",
         urlVignette: "url('../fichiers/images/myositis.png');",
+        urlDirectVignette: "url('/fichiers/images/myositis.png');",
     },
     {
         titre: "Chapeau Spree",
@@ -30,6 +33,7 @@ const donneesProjets = [
         lien: "index-projets/chapeau-spree.html",
         id: "chapeau",
         urlVignette: "url('../fichiers/images/chapeau.png');",
+        urlDirectVignette: "url('/fichiers/images/chapeau.png');",
     },
     {
         titre: "L'aventure de la Moustache",
@@ -38,8 +42,7 @@ const donneesProjets = [
         lien: "index-projets/moustache.html",
         id: "moustache",
         urlVignette: "url('../fichiers/images/moustache.png');",
-        type: "Jeu Unity 2D",
-        description: "",
+        urlDirectVignette: "url('/fichiers/images/moustache.png');",
     },
     {
         titre: "Bananarama",
@@ -48,5 +51,6 @@ const donneesProjets = [
         lien: "index-projets/bananarama.html",
         id: "bananarama",
         urlVignette: "url('../fichiers/images/bananarama-couverture.png');",
+        urlDirectVignette: "url('/fichiers/images/bananarama-couverture.png');",
     },
 ];
