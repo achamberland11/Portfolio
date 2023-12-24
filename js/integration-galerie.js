@@ -66,14 +66,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Mettre à jour les images ou la video visible
         function ImageVisible() {
-            console.log(indexImage)
-
             video.style.display = indexImage === -1 ? 'block' : 'none';
 
             const imgElements = galerie.querySelectorAll('img');
             imgElements.forEach(function (img, index) {
                 img.style.display = index === indexImage ? 'block' : 'none';
             });
+
+            if(video.style.display === 'none'){
+                video.pause();
+            }
         }
     } else {
         conteneurGalerie.innerHTML = `
