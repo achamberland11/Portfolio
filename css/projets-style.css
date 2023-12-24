@@ -42,13 +42,39 @@ main {
 
 #conteneur-galerie {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     margin-top: 15vh;
+    width: 65%;
+    height: auto;
+}
+
+.boutons-galerie {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: transparent;
+    border: none;
+    color: var(--texte);
+    z-index: 500;
+}
+
+.boutons-galerie span {
+    z-index: 1;
+}
+
+.boutons-galerie:hover {
+    cursor: pointer;
 }
 
 #galerie {
-    width: 65% !important;
-    height: auto !important;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#galerie img {
+    height: 70vh;
+    width: auto;
 }
 
 .info-projets {

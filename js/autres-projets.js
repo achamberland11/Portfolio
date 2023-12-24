@@ -12,11 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    console.log(index);
-
     if (index !== -1) {
         donneesProjets.splice(index, 1);
-        console.log(donneesProjets);
     }
 
     const conteneurProjets = document.getElementById("autres-projets");
