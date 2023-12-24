@@ -45,10 +45,6 @@ main{
     margin-top: 1rem;
 }
 
-video {
-    margin-top: 15vh;
-}
-
 .conteneur-liens{
     display: flex;
     justify-content: space-evenly;

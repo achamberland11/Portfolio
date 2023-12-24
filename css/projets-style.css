@@ -40,7 +40,13 @@ main {
     background-color: var(--ombres);
 }
 
-video {
+#conteneur-galerie {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15vh;
+}
+
+#galerie {
     width: 65% !important;
     height: auto !important;
 }

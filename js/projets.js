@@ -8,6 +8,12 @@ const donneesProjets = [
         id: "c-d",
         urlVignette: "url('../fichiers/images/CD.jpg');",
         urlDirectVignette: "url('fichiers/images/CD.jpg');",
+        video: "../fichiers/videos/CD-video.mp4",
+        images: [
+            {
+                image1: "",
+            },
+        ],
     },
     {
         titre: "Transit",
@@ -18,6 +24,12 @@ const donneesProjets = [
         id: "transit",
         urlVignette: "url('../fichiers/images/transit.png');",
         urlDirectVignette: "url('fichiers/images/transit.png');",
+        video: "../fichiers/videos/Transit-video.mp4",
+        images: [
+            {
+                image1: "",
+            },
+        ],
     },
     {
         titre: "Myosotis Memories",
@@ -28,6 +40,12 @@ const donneesProjets = [
         id: "MM",
         urlVignette: "url('../fichiers/images/myositis.png');",
         urlDirectVignette: "url('fichiers/images/myositis.png');",
+        video: "../fichiers/videos/Myositis-video.mp4",
+        images: [
+            {
+                image1: "",
+            },
+        ],
     },
     {
         titre: "Chapeau Spree",
@@ -38,6 +56,12 @@ const donneesProjets = [
         id: "chapeau",
         urlVignette: "url('../fichiers/images/chapeau.png');",
         urlDirectVignette: "url('fichiers/images/chapeau.png');",
+        video: "../fichiers/videos/Chapeau-Video.mp4",
+        images: [
+            {
+                image1: "",
+            },
+        ],
     },
     {
         titre: "L'aventure de la Moustache",
@@ -48,8 +72,12 @@ const donneesProjets = [
         id: "moustache",
         urlVignette: "url('../fichiers/images/moustache.png');",
         urlDirectVignette: "url('fichiers/images/moustache.png');",
-        type: "Jeu Unity 2D",
-        description: "",
+        video: "../fichiers/videos/Moustache-video.mp4",
+        images: [
+            {
+                image1: "",
+            },
+        ],
     },
     {
         titre: "Bananarama",
@@ -60,5 +88,11 @@ const donneesProjets = [
         id: "bananarama",
         urlVignette: "url('../fichiers/images/bananarama-couverture.png');",
         urlDirectVignette: "url('fichiers/images/bananarama-couverture.png');",
+        video: "../fichiers/videos/Bananarama-video.mp4",
+        images: [
+            {
+                image1: "",
+            },
+        ],
     },
 ];
