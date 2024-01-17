@@ -32,10 +32,26 @@ const donneesProjets = [
         id: "transit",
         urlVignette: "url('../fichiers/images/transit.png');",
         urlDirectVignette: "url('fichiers/images/transit.png');",
-        video: "../fichiers/videos/Transit-video.mp4",
         galerie: [
             {
                 src: "../fichiers/videos/Transit-video.mp4",
+                type: typeVideo,
+                titre: "Vidéo de Présentation",
+            },
+        ],
+    },
+    {
+        titre: "Rubix",
+        technologie: "Unity 3D VR - C#",
+        date: "2023 - Projet en Équipe (4)",
+        lien: "index-projets/rubix.html",
+        lienIndex: "/Portfolio/index-projets/rubix.html",
+        id: "rubix",
+        urlVignette: "url('../fichiers/images/rubix.png');",
+        urlDirectVignette: "url('fichiers/images/rubix.png');",
+        galerie: [
+            {
+                src: "../fichiers/videos/Rubix-video.mp4",
                 type: typeVideo,
                 titre: "Vidéo de Présentation",
             },
@@ -50,7 +66,6 @@ const donneesProjets = [
         id: "MM",
         urlVignette: "url('../fichiers/images/myositis.png');",
         urlDirectVignette: "url('fichiers/images/myositis.png');",
-        video: "../fichiers/videos/Myositis-video.mp4",
         galerie: [
             {
                 src: "../fichiers/videos/Myositis-video.mp4",
@@ -68,7 +83,6 @@ const donneesProjets = [
         id: "chapeau",
         urlVignette: "url('../fichiers/images/chapeau.png');",
         urlDirectVignette: "url('fichiers/images/chapeau.png');",
-        video: "../fichiers/videos/Chapeau-Video.mp4",
         galerie: [
             {
                 src: "../fichiers/videos/Chapeau-Video.mp4",
@@ -86,28 +100,9 @@ const donneesProjets = [
         id: "moustache",
         urlVignette: "url('../fichiers/images/moustache.png');",
         urlDirectVignette: "url('fichiers/images/moustache.png');",
-        video: "../fichiers/videos/Moustache-video.mp4",
         galerie: [
             {
                 src: "../fichiers/videos/Moustache-video.mp4",
-                type: typeVideo,
-                titre: "Vidéo de Présentation",
-            },
-        ],
-    },
-    {
-        titre: "Bananarama",
-        technologie: "JavaScript - HTML",
-        date: "2021",
-        lien: "index-projets/bananarama.html",
-        lienIndex: "/Portfolio/index-projets/bananarama.html",
-        id: "bananarama",
-        urlVignette: "url('../fichiers/images/bananarama-couverture.png');",
-        urlDirectVignette: "url('fichiers/images/bananarama-couverture.png');",
-        video: "../fichiers/videos/Bananarama-video.mp4",
-        galerie: [
-            {
-                src: "../fichiers/videos/Bananarama-video.mp4",
                 type: typeVideo,
                 titre: "Vidéo de Présentation",
             },
