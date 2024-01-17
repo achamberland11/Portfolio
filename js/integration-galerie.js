@@ -15,73 +15,82 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const conteneurGalerie = document.getElementById("conteneur-galerie");
 
-    let contientImages = projet.images.length > 0;
+    let aContenueGalerie = projet.galerie.length > 1;
 
-    if (contientImages) {
+    if (aContenueGalerie) {
         conteneurGalerie.innerHTML = `
             <button class="boutons-galerie" id="btnPrecedant"><span class="material-symbols-outlined">keyboard_double_arrow_left</span></button>
-            <div id="galerie">
-                <video width="100%" controls>
-                    <source src="${projet.video}" type="video/mp4">
-                </video>
-            </div>
+            <div id="galerie"></div>
             <button class="boutons-galerie" id="btnSuivant"><span class="material-symbols-outlined">keyboard_double_arrow_right</span></button>
         `;
 
         const galerie = document.getElementById('galerie');
-        const images = projet.images;
-        let indexImage = -1;
+        const contenuGalerie = projet.galerie;
+        let indexGalerie = 0;
+        console.log(indexGalerie);
 
-        images.forEach(function (image, index) {
-            const elementIMG = document.createElement('img');
-            galerie.appendChild(elementIMG);
-            elementIMG.setAttribute('src', image.src);
-            elementIMG.style.display = index === indexImage ? 'block' : 'none';
+        contenuGalerie.forEach(function (contenu, index) {
+            if (contenu.type === typeImage) {
+                const elementIMG = document.createElement('img');
+                elementIMG.setAttribute('src', contenu.src);
+                elementIMG.classList = "element-galerie";
+
+                elementIMG.style.display = index === indexGalerie ? 'block' : 'none';
+                galerie.appendChild(elementIMG);
+            } else if (contenu.type === typeVideo) {
+                const elementVideo = document.createElement('video');
+                elementVideo.style.width = '100%';
+                elementVideo.controls = true;
+                elementVideo.classList = "element-galerie";
+
+                const elementSource = document.createElement('source');
+                elementSource.src = contenu.src;
+                elementSource.type = "video/mp4";
+
+                elementVideo.appendChild(elementSource);
+                elementVideo.style.display = index === indexGalerie ? 'block' : 'none';
+                galerie.appendChild(elementVideo);
+            }
+
+            console.log(contenu.titre + ", " + index);
         });
 
-        const video = conteneurGalerie.querySelector('video');
         const btnPrecedant = document.getElementById('btnPrecedant');
         const btnSuivant = document.getElementById('btnSuivant');
 
-        nbrImages = images.length - 1;
+        const nbrContenuGalerie = contenuGalerie.length - 1;
 
         // Navigation à travers les images
         btnPrecedant.addEventListener('click', function () {
-            if(indexImage > -1){
-                indexImage--;
-            }else{
-                indexImage = nbrImages;
-            }
-            ImageVisible();
+            indexGalerie = (indexGalerie - 1 + contenuGalerie.length) % contenuGalerie.length;
+            ContenuGalerieVisible();
         });
 
         btnSuivant.addEventListener('click', function () {
-            if(indexImage < nbrImages){
-                indexImage++
-            }else{
-                indexImage = -1;
-            }
-            ImageVisible();
+            indexGalerie = (indexGalerie + 1) % contenuGalerie.length;
+            ContenuGalerieVisible();
         });
 
         // Mettre à jour les images ou la video visible
-        function ImageVisible() {
-            video.style.display = indexImage === -1 ? 'block' : 'none';
+        function ContenuGalerieVisible() {
+            console.log(indexGalerie);
 
-            const imgElements = galerie.querySelectorAll('img');
-            imgElements.forEach(function (img, index) {
-                img.style.display = index === indexImage ? 'block' : 'none';
+            const elementGalerie = galerie.querySelectorAll('.element-galerie');
+            elementGalerie.forEach(function(element, index){
+                element.style.display = index === indexGalerie ? 'block' : 'none';
             });
-
-            if(video.style.display === 'none'){
-                video.pause();
-            }
+            const elementsVideo = galerie.querySelectorAll("video");
+            elementsVideo.forEach(function (video, index) {
+                if (video.style.display === 'none') {
+                    video.pause();
+                }
+            });
         }
     } else {
         conteneurGalerie.innerHTML = `
             <div id="galerie">
                 <video width="100%" controls>
-                    <source src="${projet.video}" type="video/mp4">
+                    <source src="${projet.galerie[0].src}" type="video/mp4">
                 </video>
             </div>
         `;

@@ -1,3 +1,5 @@
+const typeImage = "image";
+const typeVideo = "video";
 const donneesProjets = [
     {
         titre: "Chroniques Dystopiques",
@@ -8,10 +10,16 @@ const donneesProjets = [
         id: "c-d",
         urlVignette: "url('../fichiers/images/CD.jpg');",
         urlDirectVignette: "url('fichiers/images/CD.jpg');",
-        video: "../fichiers/videos/CD-video.mp4",
-        images: [
+        galerie: [
             {
-                src: "../fichiers/images/gallerie/CD/CD-Affiches.jpg",
+                src: "../fichiers/videos/CD-video.mp4",
+                type: typeVideo,
+                titre: "Bande-annonce",
+            },
+            {
+                src: "../fichiers/images/galerie/CD/CD-Affiches.jpg",
+                type: typeImage,
+                titre: "Affiche",
             },
         ],
     },
@@ -25,7 +33,13 @@ const donneesProjets = [
         urlVignette: "url('../fichiers/images/transit.png');",
         urlDirectVignette: "url('fichiers/images/transit.png');",
         video: "../fichiers/videos/Transit-video.mp4",
-        images: [],
+        galerie: [
+            {
+                src: "../fichiers/videos/Transit-video.mp4",
+                type: typeVideo,
+                titre: "Vidéo de Présentation",
+            },
+        ],
     },
     {
         titre: "Myosotis Memories",
@@ -37,7 +51,13 @@ const donneesProjets = [
         urlVignette: "url('../fichiers/images/myositis.png');",
         urlDirectVignette: "url('fichiers/images/myositis.png');",
         video: "../fichiers/videos/Myositis-video.mp4",
-        images: [],
+        galerie: [
+            {
+                src: "../fichiers/videos/Myositis-video.mp4",
+                type: typeVideo,
+                titre: "Vidéo de Présentation",
+            },
+        ],
     },
     {
         titre: "Chapeau Spree",
@@ -49,7 +69,13 @@ const donneesProjets = [
         urlVignette: "url('../fichiers/images/chapeau.png');",
         urlDirectVignette: "url('fichiers/images/chapeau.png');",
         video: "../fichiers/videos/Chapeau-Video.mp4",
-        images: [],
+        galerie: [
+            {
+                src: "../fichiers/videos/Chapeau-Video.mp4",
+                type: typeVideo,
+                titre: "Vidéo de Présentation",
+            },
+        ],
     },
     {
         titre: "L'aventure de la Moustache",
@@ -61,7 +87,13 @@ const donneesProjets = [
         urlVignette: "url('../fichiers/images/moustache.png');",
         urlDirectVignette: "url('fichiers/images/moustache.png');",
         video: "../fichiers/videos/Moustache-video.mp4",
-        images: [],
+        galerie: [
+            {
+                src: "../fichiers/videos/Moustache-video.mp4",
+                type: typeVideo,
+                titre: "Vidéo de Présentation",
+            },
+        ],
     },
     {
         titre: "Bananarama",
@@ -73,6 +105,12 @@ const donneesProjets = [
         urlVignette: "url('../fichiers/images/bananarama-couverture.png');",
         urlDirectVignette: "url('fichiers/images/bananarama-couverture.png');",
         video: "../fichiers/videos/Bananarama-video.mp4",
-        images: [],
+        galerie: [
+            {
+                src: "../fichiers/videos/Bananarama-video.mp4",
+                type: typeVideo,
+                titre: "Vidéo de Présentation",
+            },
+        ],
     },
 ];
