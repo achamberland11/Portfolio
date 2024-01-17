@@ -24,23 +24,6 @@ const donneesProjets = [
         ],
     },
     {
-        titre: "Transit",
-        technologie: "Unity 3D - C#",
-        date: "2022",
-        lien: "index-projets/transit.html",
-        lienIndex: "/Portfolio/index-projets/transit.html",
-        id: "transit",
-        urlVignette: "url('../fichiers/images/transit.png');",
-        urlDirectVignette: "url('fichiers/images/transit.png');",
-        galerie: [
-            {
-                src: "../fichiers/videos/Transit-video.mp4",
-                type: typeVideo,
-                titre: "Vidéo de Présentation",
-            },
-        ],
-    },
-    {
         titre: "Rubix",
         technologie: "Unity 3D VR - C#",
         date: "2023 - Projet en Équipe (4)",
@@ -52,6 +35,23 @@ const donneesProjets = [
         galerie: [
             {
                 src: "../fichiers/videos/Rubix-video.mp4",
+                type: typeVideo,
+                titre: "Vidéo de Présentation",
+            },
+        ],
+    },
+    {
+        titre: "Transit",
+        technologie: "Unity 3D - C#",
+        date: "2022",
+        lien: "index-projets/transit.html",
+        lienIndex: "/Portfolio/index-projets/transit.html",
+        id: "transit",
+        urlVignette: "url('../fichiers/images/transit.png');",
+        urlDirectVignette: "url('fichiers/images/transit.png');",
+        galerie: [
+            {
+                src: "../fichiers/videos/Transit-video.mp4",
                 type: typeVideo,
                 titre: "Vidéo de Présentation",
             },
