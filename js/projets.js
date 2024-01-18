@@ -17,7 +17,7 @@ const donneesProjets = [
                 titre: "Bande-annonce",
             },
             {
-                src: "../fichiers/images/galerie/CD/CD-Affiches.jpg",
+                src: "../fichiers/galerie/CD/CD-Affiches.jpg",
                 type: typeImage,
                 titre: "Affiche",
             },
@@ -37,6 +37,11 @@ const donneesProjets = [
                 src: "../fichiers/videos/Cult-Video.mp4",
                 type: typeVideo,
                 titre: "Bande-annonce",
+            },
+            {
+                src: "../fichiers/galerie/Cult-Tuerie/banniere-cult.png",
+                type: typeImage,
+                titre: "Bannière",
             },
         ],
     },

@@ -73,7 +73,7 @@ main {
 }
 
 #galerie img {
-    height: 70vh;
+    max-height: 70vh;
     width: auto;
 }
 
