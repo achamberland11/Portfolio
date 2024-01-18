@@ -9,10 +9,11 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     width: 85vw;
     height: 90vh;
-    padding-bottom: -50vmin;
+    padding-top: 1rem;
+    margin-bottom: 5rem;
 }
 
 .projet {
@@ -21,7 +22,6 @@ main {
     min-height: 18vw;
     background-size: contain;
     background-color: var(--noir);
-    top: 6vmin;
 }
 
 .projet::before {

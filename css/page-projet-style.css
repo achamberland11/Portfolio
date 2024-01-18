@@ -10,6 +10,7 @@ main{
     display: flex;
     flex-flow: column;
     overflow: hidden;
+    height: fit-content;
 }
 
 .desc-projet {
@@ -36,7 +37,6 @@ main{
     justify-content: center;
     align-items: center;
     width: 80vw;
-    margin-top: -5rem;
 }
 
 #autres-projets .projet {

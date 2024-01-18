@@ -24,8 +24,25 @@ const donneesProjets = [
         ],
     },
     {
+        titre: "Cult-Tuerie",
+        technologie: "Unity 3D - C# (Gamejam)",
+        date: "2024 - Projet en Équipe (4)",
+        lien: "index-projets/rubix.html",
+        lienIndex: "/Portfolio/index-projets/rubix.html",
+        id: "rubix",
+        urlVignette: "url('../fichiers/images/rubix.png');",
+        urlDirectVignette: "url('fichiers/images/rubix.png');",
+        galerie: [
+            {
+                src: "../fichiers/videos/Rubix-video.mp4",
+                type: typeVideo,
+                titre: "Vidéo de Présentation",
+            },
+        ],
+    },
+    {
         titre: "Rubix",
-        technologie: "Unity 3D VR - C#",
+        technologie: "Unity 3D - C# (VR)",
         date: "2023 - Projet en Équipe (4)",
         lien: "index-projets/rubix.html",
         lienIndex: "/Portfolio/index-projets/rubix.html",
@@ -90,7 +107,7 @@ const donneesProjets = [
                 titre: "Vidéo de Présentation",
             },
         ],
-    },
+    },/*
     {
         titre: "L'aventure de la Moustache",
         technologie: "Unity 2D - C#",
@@ -107,5 +124,5 @@ const donneesProjets = [
                 titre: "Vidéo de Présentation",
             },
         ],
-    },
+    },*/
 ];
