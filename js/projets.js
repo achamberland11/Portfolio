@@ -26,7 +26,7 @@ const donneesProjets = [
     {
         titre: "Cult-Tuerie",
         technologie: "Unity 3D - C# (Gamejam)",
-        date: "2024 - Projet en Équipe (4)",
+        date: "2024 - Projet en Équipe (6)",
         lien: "index-projets/cult-tuerie.html",
         lienIndex: "/Portfolio/index-projets/cult-tuerie.html",
         id: "cult-tuerie",
